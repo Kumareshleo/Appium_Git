@@ -496,7 +496,7 @@ public class SelendroidTestApp extends Driver {
 	}
 
 	public void clickOnFromDate1() throws InterruptedException {
-		driver.findElement(By.xpath("//*[@content-desc='25 August 2020']")).click();
+		driver.findElement(By.xpath("//*[@content-desc='28 August 2020']")).click();
 		Thread.sleep(1000);
 	}
 
@@ -587,7 +587,7 @@ public class SelendroidTestApp extends Driver {
 	}
 
 	public void clickOnDate() throws InterruptedException, IOException {
-		driver.findElement(By.xpath("//android.widget.TextView[@text='25']")).click();
+		driver.findElement(By.xpath("//android.widget.TextView[@text='28']")).click();
 		Thread.sleep(2000);
 		File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(file, new File("K:\\EDW_Appium\\screenshots\\FixedMeetings.jpg"));
