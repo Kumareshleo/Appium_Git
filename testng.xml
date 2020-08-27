@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="WEB" verbose="1" parallel="tests" thread-count="2">
+
+	<!--Implicit Wait (works with manage method) Use maxWaitTimeToPOLLElement 
+		judiciously as this parameter will give an adverse effect on script execution 
+		time -->
+	<parameter name="maxWaitTimeToPOLLElement" value="100" />
+
+	<!-- Explicit wait (Works with ExpectedConditions)Encourage use of "maxWaitTimeToFindElement" 
+		as this will not reduce the entire on script execution time, rather it will 
+		wait for the specified time to identify a element -->
+
+	<parameter name="maxWaitTimeToFindElement" value="150"></parameter>
+
+	<!-- Here you can change the url for application,keep one as uncommented 
+		only -->
+	<!-- <parameter name="url" value="https://everydaywell.dex.staginghealtheintent.com/pages/home" 
+		/> -->
+	<!-- <parameter name="url" value="https://everydaywell.dex.staginghealtheintent.com/pages/home"/> -->
+
+	<listeners>
+		<listener class-name="edw.edw.frameLib.ExtentListener" />
+		<!-- <listener class-name="edw.edw.frameLib.CustomReport1234" /> -->
+		<listener class-name="edw.edw.frameLib.TestListener" />
+		<listener class-name="edw.edw.frameLib.CustomReport" />
+
+	</listeners>
+
+	<test name="StagingforIE" parallel="classes" thread-count="1">
+
+		<!-- <parameter name="deviceType" value="desktop" /> -->
+		<parameter name="deviceType" value="mobile" />
+		<parameter name="appType" value="mobileApp" />
+		<!--<parameter name="apkFileName" value="Omani Calendar_v8.22_apkpure.com.apk"/> -->
+		<parameter name="apkFileName"
+			value="Zoho CRM Sales Marketing_v3.4.9.1_apkpure.com.apk" />
+		<!-- <parameter name="apkFileName" value="swiggy-3-39-3.apk" /> -->
+
+		<classes>
+			<!-- <class name="edw.edw.login.LoginTest" /> -->
+			<class name="edw.edw.login.SelenoidTest" />
+		</classes>
+	</test>
+</suite>
