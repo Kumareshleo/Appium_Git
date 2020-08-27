@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [WEB]" parallel="tests">
+  <parameter name="maxWaitTimeToFindElement" value="150"/>
+  <parameter name="maxWaitTimeToPOLLElement" value="100"/>
+  <listeners>
+    <listener class-name="edw.edw.frameLib.CustomReport"/>
+    <listener class-name="edw.edw.frameLib.TestListener"/>
+    <listener class-name="edw.edw.frameLib.ExtentListener"/>
+  </listeners>
+  <test thread-count="2" name="StagingforIE(failed)" parallel="classes">
+    <parameter name="deviceType" value="mobile"/>
+    <parameter name="apkFileName" value="Zoho CRM Sales Marketing_v3.4.9.1_apkpure.com.apk"/>
+    <parameter name="appType" value="mobileApp"/>
+    <classes>
+      <class name="edw.edw.login.SelenoidTest">
+        <methods>
+          <include name="drop"/>
+          <include name="Database"/>
+          <include name="loginTest"/>
+          <include name="Initialize"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- edw.edw.login.SelenoidTest -->
+    </classes>
+  </test> <!-- StagingforIE(failed) -->
+</suite> <!-- Failed suite [WEB] -->

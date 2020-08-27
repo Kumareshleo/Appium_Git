@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Environment Configuration Ready]]>
+    </line>
+    <line>
+      <![CDATA[Test Case : Test_Case_ID : 001 : Testing Zoho CRM App]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Sign Up Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Google Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Mail]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Accept Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Manage]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Back Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Menu]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Leads]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Add New]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on New Leads]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Switch To Smart View Button]]>
+    </line>
+    <line>
+      <![CDATA[Entered Company Name]]>
+    </line>
+    <line>
+      <![CDATA[Entered First Name]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Back Button]]>
+    </line>
+    <line>
+      <![CDATA[Entered Last Name]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Back Button]]>
+    </line>
+    <line>
+      <![CDATA[Entered Email ID]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Back Button]]>
+    </line>
+    <line>
+      <![CDATA[Entered Phone Number]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Back Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Save Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Add New]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on New Leads]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Switch To Smart View Button]]>
+    </line>
+    <line>
+      <![CDATA[Entered Company Name]]>
+    </line>
+    <line>
+      <![CDATA[Entered First Name]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Back Button]]>
+    </line>
+    <line>
+      <![CDATA[Entered Last Name]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Back Button]]>
+    </line>
+    <line>
+      <![CDATA[Entered Email ID]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Back Button]]>
+    </line>
+    <line>
+      <![CDATA[Entered Phone Number]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Back Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Save Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Menu Icon]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Home Icon]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Meeting]]>
+    </line>
+    <line>
+      <![CDATA[Entered Title]]>
+    </line>
+    <line>
+      <![CDATA[Entered Location]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on From Date]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on From Date1]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Time]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on 3:00 PM]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Done Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on To Date]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on To Time]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on 4:00 PM]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Done]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Participants]]>
+    </line>
+    <line>
+      <![CDATA[Entered Name]]>
+    </line>
+    <line>
+      <![CDATA[Entered Another Name]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Save Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Save Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Date]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Meetings]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Details]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Back Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Meetings]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Icon]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Delete Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Menu Icon]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Leads]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Name : Nakul]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Icon]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Delete Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Name : Alex]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Icon]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Delete Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Menu Icon]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Settings Icon]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Sign Out]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Sign Out Button]]>
+    </line>
+    <line>
+      <![CDATA[Test Case : Test_Case_ID : 001 :Verified Zoho CRM App]]>
+    </line>
+    <line>
+      <![CDATA[loginTest Passed]]>
+    </line>
+    <line>
+      <![CDATA[Screenshot can be found : ..\Screenshots\Results\SelenoidTest\loginTest.png]]>
+    </line>
+  </reporter-output>
+  <suite name="WEB" duration-ms="284792" started-at="2020-08-25T18:29:05Z" finished-at="2020-08-25T18:33:50Z">
+    <groups>
+    </groups>
+    <test name="StagingforIE" duration-ms="284792" started-at="2020-08-25T18:29:05Z" finished-at="2020-08-25T18:33:50Z">
+      <class name="edw.edw.login.SelenoidTest">
+        <test-method status="PASS" signature="Database()[pri:0, instance:edw.edw.login.SelenoidTest@2286778]" name="Database" is-config="true" duration-ms="316" started-at="2020-08-25T18:29:05Z" finished-at="2020-08-25T18:29:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Environment Configuration Ready]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Database -->
+        <test-method status="PASS" signature="Initialize(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:edw.edw.login.SelenoidTest@2286778]" name="Initialize" is-config="true" duration-ms="58159" started-at="2020-08-25T18:29:05Z" finished-at="2020-08-25T18:30:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mobileApp]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Zoho CRM Sales Marketing_v3.4.9.1_apkpure.com.apk]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialize -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:edw.edw.login.SelenoidTest@2286778]" name="loginTest" duration-ms="224019" started-at="2020-08-25T18:30:03Z" finished-at="2020-08-25T18:33:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case : Test_Case_ID : 001 : Testing Zoho CRM App]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Sign Up Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Google Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Mail]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Accept Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Manage]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Back Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Menu]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Leads]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Add New]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on New Leads]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Switch To Smart View Button]]>
+            </line>
+            <line>
+              <![CDATA[Entered Company Name]]>
+            </line>
+            <line>
+              <![CDATA[Entered First Name]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Back Button]]>
+            </line>
+            <line>
+              <![CDATA[Entered Last Name]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Back Button]]>
+            </line>
+            <line>
+              <![CDATA[Entered Email ID]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Back Button]]>
+            </line>
+            <line>
+              <![CDATA[Entered Phone Number]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Back Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Save Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Add New]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on New Leads]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Switch To Smart View Button]]>
+            </line>
+            <line>
+              <![CDATA[Entered Company Name]]>
+            </line>
+            <line>
+              <![CDATA[Entered First Name]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Back Button]]>
+            </line>
+            <line>
+              <![CDATA[Entered Last Name]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Back Button]]>
+            </line>
+            <line>
+              <![CDATA[Entered Email ID]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Back Button]]>
+            </line>
+            <line>
+              <![CDATA[Entered Phone Number]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Back Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Save Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Menu Icon]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Home Icon]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Meeting]]>
+            </line>
+            <line>
+              <![CDATA[Entered Title]]>
+            </line>
+            <line>
+              <![CDATA[Entered Location]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on From Date]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on From Date1]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Time]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on 3:00 PM]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Done Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on To Date]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on To Time]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on 4:00 PM]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Done]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Participants]]>
+            </line>
+            <line>
+              <![CDATA[Entered Name]]>
+            </line>
+            <line>
+              <![CDATA[Entered Another Name]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Save Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Save Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Date]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Meetings]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Details]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Back Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Meetings]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Icon]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Delete Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Menu Icon]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Leads]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Name : Nakul]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Icon]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Delete Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Name : Alex]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Icon]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Delete Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Menu Icon]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Settings Icon]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Sign Out]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Sign Out Button]]>
+            </line>
+            <line>
+              <![CDATA[Test Case : Test_Case_ID : 001 :Verified Zoho CRM App]]>
+            </line>
+            <line>
+              <![CDATA[loginTest Passed]]>
+            </line>
+            <line>
+              <![CDATA[Screenshot can be found : ..\Screenshots\Results\SelenoidTest\loginTest.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="drop()[pri:0, instance:edw.edw.login.SelenoidTest@2286778]" name="drop" is-config="true" duration-ms="1133" started-at="2020-08-25T18:33:49Z" finished-at="2020-08-25T18:33:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drop -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:edw.edw.login.SelenoidTest@2286778]" name="tearDown" is-config="true" duration-ms="36" started-at="2020-08-25T18:33:51Z" finished-at="2020-08-25T18:33:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- edw.edw.login.SelenoidTest -->
+    </test> <!-- StagingforIE -->
+  </suite> <!-- WEB -->
+</testng-results>

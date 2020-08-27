@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-WEB">
+              <span class="suite-name border-passed">WEB</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-WEB">
+                    <span>K:\EDW_Appium\Executor\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-WEB">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-WEB">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-WEB">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-WEB">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-WEB">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-WEB">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-WEB" class="hide-methods passed suite-WEB"> (hide)</a> <!-- hide-methods passed suite-WEB -->
+                      <a href="#" panel-name="suite-WEB" class="show-methods passed suite-WEB"> (show)</a> <!-- show-methods passed suite-WEB -->
+                    </span>
+                    <div class="method-list-content passed suite-WEB">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-WEB" title="edw.edw.login.SelenoidTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-WEB -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-WEB" class="panel WEB">
+          <div class="suite-WEB-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">edw.edw.login.SelenoidTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-WEB-class-passed -->
+        </div> <!-- panel WEB -->
+        <div panel-name="test-xml-WEB" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">K:\EDW_Appium\Executor\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;WEB&quot; parallel=&quot;tests&quot;&gt;
+  &lt;parameter name=&quot;maxWaitTimeToFindElement&quot; value=&quot;150&quot;/&gt;
+  &lt;parameter name=&quot;maxWaitTimeToPOLLElement&quot; value=&quot;100&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;edw.edw.frameLib.ExtentListener&quot;/&gt;
+    &lt;listener class-name=&quot;edw.edw.frameLib.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;edw.edw.frameLib.CustomReport&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;StagingforIE&quot; parallel=&quot;classes&quot;&gt;
+    &lt;parameter name=&quot;deviceType&quot; value=&quot;mobile&quot;/&gt;
+    &lt;parameter name=&quot;apkFileName&quot; value=&quot;Zoho CRM Sales Marketing_v3.4.9.1_apkpure.com.apk&quot;/&gt;
+    &lt;parameter name=&quot;appType&quot; value=&quot;mobileApp&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;edw.edw.login.SelenoidTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- StagingforIE --&gt;
+&lt;/suite&gt; &lt;!-- WEB --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-WEB" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for WEB</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">StagingforIE (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-WEB" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for WEB</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-WEB" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for WEB</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_WEB');
+function tableData_WEB() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'edw.edw.login.SelenoidTest')
+data.setCell(0, 3, 224019);
+window.suiteTableData['WEB']= { tableData: data, tableDiv: 'times-div-WEB'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-WEB">
+              </div> <!-- times-div-WEB -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-WEB" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for WEB</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Case : Test_Case_ID : 001 : Testing Zoho CRM App</span>
+                <span class="reporter-method-output">Clicked on Sign Up Button</span>
+                <span class="reporter-method-output">Clicked on Google Button</span>
+                <span class="reporter-method-output">Clicked on Mail</span>
+                <span class="reporter-method-output">Clicked on Accept Button</span>
+                <span class="reporter-method-output">Clicked on Manage</span>
+                <span class="reporter-method-output">Clicked on Back Button</span>
+                <span class="reporter-method-output">Clicked on Menu</span>
+                <span class="reporter-method-output">Clicked on Leads</span>
+                <span class="reporter-method-output">Clicked on Add New</span>
+                <span class="reporter-method-output">Clicked on New Leads</span>
+                <span class="reporter-method-output">Clicked on Switch To Smart View Button</span>
+                <span class="reporter-method-output">Entered Company Name</span>
+                <span class="reporter-method-output">Entered First Name</span>
+                <span class="reporter-method-output">Clicked on Back Button</span>
+                <span class="reporter-method-output">Entered Last Name</span>
+                <span class="reporter-method-output">Clicked on Back Button</span>
+                <span class="reporter-method-output">Entered Email ID</span>
+                <span class="reporter-method-output">Clicked on Back Button</span>
+                <span class="reporter-method-output">Entered Phone Number</span>
+                <span class="reporter-method-output">Clicked on Back Button</span>
+                <span class="reporter-method-output">Clicked on Save Button</span>
+                <span class="reporter-method-output">Clicked on Add New</span>
+                <span class="reporter-method-output">Clicked on New Leads</span>
+                <span class="reporter-method-output">Clicked on Switch To Smart View Button</span>
+                <span class="reporter-method-output">Entered Company Name</span>
+                <span class="reporter-method-output">Entered First Name</span>
+                <span class="reporter-method-output">Clicked on Back Button</span>
+                <span class="reporter-method-output">Entered Last Name</span>
+                <span class="reporter-method-output">Clicked on Back Button</span>
+                <span class="reporter-method-output">Entered Email ID</span>
+                <span class="reporter-method-output">Clicked on Back Button</span>
+                <span class="reporter-method-output">Entered Phone Number</span>
+                <span class="reporter-method-output">Clicked on Back Button</span>
+                <span class="reporter-method-output">Clicked on Save Button</span>
+                <span class="reporter-method-output">Clicked on Menu Icon</span>
+                <span class="reporter-method-output">Clicked on Home Icon</span>
+                <span class="reporter-method-output">Clicked on Meeting</span>
+                <span class="reporter-method-output">Entered Title</span>
+                <span class="reporter-method-output">Entered Location</span>
+                <span class="reporter-method-output">Clicked on From Date</span>
+                <span class="reporter-method-output">Clicked on From Date1</span>
+                <span class="reporter-method-output">Clicked on Time</span>
+                <span class="reporter-method-output">Clicked on 3:00 PM</span>
+                <span class="reporter-method-output">Clicked on Done Button</span>
+                <span class="reporter-method-output">Clicked on To Date</span>
+                <span class="reporter-method-output">Clicked on To Time</span>
+                <span class="reporter-method-output">Clicked on 4:00 PM</span>
+                <span class="reporter-method-output">Clicked on Done</span>
+                <span class="reporter-method-output">Clicked on Participants</span>
+                <span class="reporter-method-output">Entered Name</span>
+                <span class="reporter-method-output">Entered Another Name</span>
+                <span class="reporter-method-output">Clicked on Save Button</span>
+                <span class="reporter-method-output">Clicked on Save Button</span>
+                <span class="reporter-method-output">Clicked on Date</span>
+                <span class="reporter-method-output">Clicked on Meetings</span>
+                <span class="reporter-method-output">Clicked on Details</span>
+                <span class="reporter-method-output">Clicked on Back Button</span>
+                <span class="reporter-method-output">Clicked on Meetings</span>
+                <span class="reporter-method-output">Clicked on Icon</span>
+                <span class="reporter-method-output">Clicked on Delete Button</span>
+                <span class="reporter-method-output">Clicked on Menu Icon</span>
+                <span class="reporter-method-output">Clicked on Leads</span>
+                <span class="reporter-method-output">Clicked on Name : Nakul</span>
+                <span class="reporter-method-output">Clicked on Icon</span>
+                <span class="reporter-method-output">Clicked on Delete Button</span>
+                <span class="reporter-method-output">Clicked on Name : Alex</span>
+                <span class="reporter-method-output">Clicked on Icon</span>
+                <span class="reporter-method-output">Clicked on Delete Button</span>
+                <span class="reporter-method-output">Clicked on Menu Icon</span>
+                <span class="reporter-method-output">Clicked on Settings Icon</span>
+                <span class="reporter-method-output">Clicked on Sign Out</span>
+                <span class="reporter-method-output">Clicked on Sign Out Button</span>
+                <span class="reporter-method-output">Test Case : Test_Case_ID : 001 :Verified Zoho CRM App</span>
+                <span class="reporter-method-output">loginTest Passed</span>
+                <span class="reporter-method-output">Screenshot can be found : ..\Screenshots\Results\SelenoidTest\loginTest.png</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-WEB" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-WEB" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">edw.edw.login.SelenoidTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">Database</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">Initialize(mobile, mobileApp, Zoho CRM Sales Marketing_v3.4.9.1_apkpure.com.apk)</span>
+                <span class="method-start">382 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">58541 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">drop</span>
+                <span class="method-start">283988 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">285976 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
