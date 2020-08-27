@@ -1158,7 +1158,7 @@ public class CustomReport extends Driver  implements IReporter {
 		System.setProperty("webdriver.chrome.driver", "K:\\EDW_Appium\\resources\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		//driver.get("file:///E://Project//jar//InfoFace//test-output//custom-report.html");
-		File dir = new File("K:\\Appium_EDW\\test-output");
+		File dir = new File("K:\\Appium_EDW\\test-output\\");
 		File[] files = dir.listFiles();
 		// System.out.println(files.length);
 		lastModifiedFile = files[0];
@@ -1187,7 +1187,7 @@ public class CustomReport extends Driver  implements IReporter {
 		}
 		System.out.println("Current File :" + lastModifiedFile);
 		Thread.sleep(2000);
-		driver.get("K:\\Appium_EDW\\test-output" + lastModifiedFile.getName());
+		driver.get("K:\\Appium_EDW\\test-output\\" + lastModifiedFile.getName());
 		driver.manage().window().maximize();
 		driver.navigate().refresh();
 		System.out.println("Launched the Report");
@@ -1303,7 +1303,7 @@ public class CustomReport extends Driver  implements IReporter {
 
 			// String projectPath = System.getProperty("user.dir"); 
 
-			String projectPath = "K:\\Appium_EDW\\test-output";
+			String projectPath = "K:\\Appium_EDW\\test-output\\";
 			// driver.get("K:\\EDW_Appium\\test-output\\" + lastModifiedFile.getName());
 			messageBodyPart = new MimeBodyPart();
 
