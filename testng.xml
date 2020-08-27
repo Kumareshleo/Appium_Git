@@ -19,10 +19,11 @@
 	<!-- <parameter name="url" value="https://everydaywell.dex.staginghealtheintent.com/pages/home"/> -->
 
 	<listeners>
-		<listener class-name="edw.edw.frameLib.ExtentListener" />
+		<listener class-name="edw.edw.frameLib.CustomReport" />
 		<!-- <listener class-name="edw.edw.frameLib.CustomReport1234" /> -->
 		<listener class-name="edw.edw.frameLib.TestListener" />
-		<listener class-name="edw.edw.frameLib.CustomReport" />
+		<listener class-name="edw.edw.frameLib.ExtentListener" />
+
 
 	</listeners>
 
