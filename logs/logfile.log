@@ -1,1 +1,81 @@
-27-08-2020 12:51:43 INFO [Log]: Environment Configuration Ready
+27-08-2020 13:37:02 INFO [Log]: Environment Configuration Ready
+27-08-2020 13:38:10 INFO [Log]: ****************************************************************************************
+27-08-2020 13:38:10 INFO [Log]: ***               Test_Case_ID : 001 : Testing Zoho CRM App       ***
+27-08-2020 13:38:10 INFO [Log]: ****************************************************************************************
+27-08-2020 13:38:15 INFO [Log]: Clicked on Sign Up Button
+27-08-2020 13:38:18 INFO [Log]: Clicked on Google Button
+27-08-2020 13:38:26 INFO [Log]: Clicked on Mail
+27-08-2020 13:38:54 INFO [Log]: Clicked on Accept Button
+27-08-2020 13:38:55 INFO [Log]: Clicked on Manage
+27-08-2020 13:38:57 INFO [Log]: Clicked on Back Button
+27-08-2020 13:38:59 INFO [Log]: Clicked on Menu
+27-08-2020 13:39:03 INFO [Log]: Clicked on Leads
+27-08-2020 13:39:04 INFO [Log]: Clicked on Add New
+27-08-2020 13:39:07 INFO [Log]: Clicked on New Leads
+27-08-2020 13:39:10 INFO [Log]: Clicked on Switch To Smart View Button
+27-08-2020 13:39:14 INFO [Log]: Entered Company Name
+27-08-2020 13:39:18 INFO [Log]: Entered First Name
+27-08-2020 13:39:19 INFO [Log]: Clicked on Back Button
+27-08-2020 13:39:22 INFO [Log]: Entered Last Name
+27-08-2020 13:39:23 INFO [Log]: Clicked on Back Button
+27-08-2020 13:39:27 INFO [Log]: Entered Email ID
+27-08-2020 13:39:28 INFO [Log]: Clicked on Back Button
+27-08-2020 13:39:31 INFO [Log]: Entered Phone Number
+27-08-2020 13:39:32 INFO [Log]: Clicked on Back Button
+27-08-2020 13:39:33 INFO [Log]: Clicked on Save Button
+27-08-2020 13:39:36 INFO [Log]: Clicked on Add New
+27-08-2020 13:39:38 INFO [Log]: Clicked on New Leads
+27-08-2020 13:39:41 INFO [Log]: Clicked on Switch To Smart View Button
+27-08-2020 13:39:45 INFO [Log]: Entered Company Name
+27-08-2020 13:39:48 INFO [Log]: Entered First Name
+27-08-2020 13:39:49 INFO [Log]: Clicked on Back Button
+27-08-2020 13:39:53 INFO [Log]: Entered Last Name
+27-08-2020 13:39:54 INFO [Log]: Clicked on Back Button
+27-08-2020 13:39:58 INFO [Log]: Entered Email ID
+27-08-2020 13:39:59 INFO [Log]: Clicked on Back Button
+27-08-2020 13:40:03 INFO [Log]: Entered Phone Number
+27-08-2020 13:40:04 INFO [Log]: Clicked on Back Button
+27-08-2020 13:40:05 INFO [Log]: Clicked on Save Button
+27-08-2020 13:40:08 INFO [Log]: Clicked on Menu Icon
+27-08-2020 13:40:11 INFO [Log]: Clicked on Home Icon
+27-08-2020 13:40:13 INFO [Log]: Clicked on Meeting
+27-08-2020 13:40:18 INFO [Log]: Entered Title
+27-08-2020 13:40:21 INFO [Log]: Entered Location
+27-08-2020 13:40:23 INFO [Log]: Clicked on From Date
+27-08-2020 13:40:27 INFO [Log]: Clicked on From Date1
+27-08-2020 13:40:28 INFO [Log]: Clicked on Time
+27-08-2020 13:40:33 INFO [Log]: Clicked on 3:00 PM
+27-08-2020 13:40:34 INFO [Log]: Clicked on Done Button
+27-08-2020 13:40:36 INFO [Log]: Clicked on To Date
+27-08-2020 13:40:38 INFO [Log]: Clicked on To Time
+27-08-2020 13:40:43 INFO [Log]: Clicked on 4:00 PM
+27-08-2020 13:40:44 INFO [Log]: Clicked on Done
+27-08-2020 13:40:46 INFO [Log]: Clicked on Participants
+27-08-2020 13:40:54 INFO [Log]: Entered Name
+27-08-2020 13:41:02 INFO [Log]: Entered Another Name
+27-08-2020 13:41:03 INFO [Log]: Clicked on Save Button
+27-08-2020 13:41:05 INFO [Log]: Clicked on Save Button
+27-08-2020 13:41:12 INFO [Log]: Clicked on Date
+27-08-2020 13:41:14 INFO [Log]: Clicked on Meetings
+27-08-2020 13:41:21 INFO [Log]: Clicked on Details
+27-08-2020 13:41:22 INFO [Log]: Clicked on Back Button
+27-08-2020 13:41:25 INFO [Log]: Clicked on Meetings
+27-08-2020 13:41:27 INFO [Log]: Clicked on Icon
+27-08-2020 13:41:32 INFO [Log]: Clicked on Delete Button
+27-08-2020 13:41:34 INFO [Log]: Clicked on Menu Icon
+27-08-2020 13:41:37 INFO [Log]: Clicked on Leads
+27-08-2020 13:41:39 INFO [Log]: Clicked on Name : Nakul
+27-08-2020 13:41:44 INFO [Log]: Clicked on Icon
+27-08-2020 13:41:48 INFO [Log]: Clicked on Delete Button
+27-08-2020 13:41:51 INFO [Log]: Clicked on Name : Alex
+27-08-2020 13:41:54 INFO [Log]: Clicked on Icon
+27-08-2020 13:41:59 INFO [Log]: Clicked on Delete Button
+27-08-2020 13:42:00 INFO [Log]: Clicked on Menu Icon
+27-08-2020 13:42:02 INFO [Log]: Clicked on Settings Icon
+27-08-2020 13:42:03 INFO [Log]: Clicked on Sign Out
+27-08-2020 13:42:06 INFO [Log]: Clicked on Sign Out Button
+27-08-2020 13:42:06 INFO [Log]: ****************************************************************************************
+27-08-2020 13:42:06 INFO [Log]: ***                 Test_Case_ID : 001 :Verified Zoho CRM App      ***
+27-08-2020 13:42:06 INFO [Log]: ****************************************************************************************
+27-08-2020 13:42:06 ERROR[Log]: loginTest Passed
+27-08-2020 13:42:07 INFO [Log]: Screenshot can be found : ..\Screenshots\Results\SelenoidTest\loginTest.png
