@@ -28,80 +28,6 @@ public class SelenoidTest extends Driver {
 	@Test
 	public void loginTest() throws Exception {
 
-//		// Swiggy App
-//
-//		Log.startTestCase("Test_Case_ID : 001 : Testing Swiggy App");
-//
-//		/*test.clickOnSetLocation();
-//		Log.info("Clicked on Set Location Button");
-//
-//		test.clickOnChangeLocation();
-//		Log.info("Clicked on Change Location");
-//
-//		test.enterLocation();
-//		Log.info("Entered Location");
-//
-//		test.clickOnLocation();
-//		Log.info("Clicked on Location");
-//
-//		test.clickOnConfirmLocation();
-//		Log.info("Clicked on Confirm Location");*/
-//
-//		test.clickOnSearch();
-//		Log.info("Clicked on Search Button");
-//
-//		test.enterBurger();
-//		Log.info("Entered Food Item");
-//
-//		test.clickOnBurgers();
-//		Log.info("Clicked on Burgers");
-//		
-//		// scroll and select
-//		/*test.clickOnPizza1();
-//		Log.info("Clicked on Pizza");
-//		
-//		test.clickOnAdd1();
-//		Log.info("Clicked on Pizza");*/
-//
-//		test.clickOnAdd();
-//		Log.info("Clicked on Add Item");
-//		
-//		test.clickOnCart();
-//		Log.info("Clicked on Cart");
-//		
-//		test.clickOnDelete1stItem();
-//		Log.info("First Item Deleted");
-//		
-//		test.clickOnDelete2ndItem();
-//		Log.info("Second Item Deleted");
-//
-//		/*test.clickOnBack();
-//		Log.info("Clicked on Back Button");
-//
-//		test.clickOnMenu();
-//		Log.info("Clicked on Menu Button");
-//
-//		test.clickOnVeg();
-//		Log.info("Selected Veg Pizza");
-//
-//		test.clickOnPizza0();
-//		Log.info("Clicked on Pizza");
-//
-//		test.clickOnDishes();
-//		Log.info("Clicked on Dishes");
-//
-//		test.clickOnPizza2();
-//		Log.info("Clicked on Pizza");
-//
-//		test.clickOnFreshPanPizza();
-//		Log.info("Clicked on Fresh Pan Pizza");
-//
-//		test.clickOnContinue();
-//		Log.info("Clicked on Continue");
-//
-//		test.clickOnAddItem();
-//		Log.info("Clicked on Add Item");*/
-
 		// Zoho App
 		Log.startTestCase("Test_Case_ID : 001 : Testing Zoho CRM App");
 
@@ -113,6 +39,9 @@ public class SelenoidTest extends Driver {
 
 		test.clickOnMail();
 		Log.info("Clicked on Mail");
+		
+		test.clickOnContinue();
+		Log.info("Clicked on Continue");
 
 //		test.clickOnAccept();
 //		Log.info("Clicked on Accept Button");
@@ -291,42 +220,42 @@ public class SelenoidTest extends Driver {
 
 		test.clickOnBack9();
 		Log.info("Clicked on Back Button");
-		
+
 		// Delete Scenario
-		
+
 		test.clickOnMeetings1();
 		Log.info("Clicked on Meetings");
-		
+
 		test.clickOnIcon();
 		Log.info("Clicked on Icon");
-		
+
 		test.clickOnDelete();
 		Log.info("Clicked on Delete Button");
 
 		test.clickOnMenu2();
 		Log.info("Clicked on Menu Icon");
-		
+
 		test.clickOnLeads1();
 		Log.info("Clicked on Leads");
-		
+
 		test.clickOnNakul();
 		Log.info("Clicked on Name : Nakul");
-		
+
 		test.clickOnIcon1();
 		Log.info("Clicked on Icon");
-		
+
 		test.clickOnDelete1();
 		Log.info("Clicked on Delete Button");
-		
+
 		test.clickOnAlex();
 		Log.info("Clicked on Name : Alex");
-		
+
 		test.clickOnIcon2();
 		Log.info("Clicked on Icon");
-		
+
 		test.clickOnDelete2();
 		Log.info("Clicked on Delete Button");
-		
+
 		// Sign Out
 		test.clickOnMenu3();
 		Log.info("Clicked on Menu Icon");

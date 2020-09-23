@@ -1,242 +1,36 @@
 package edw.edw.pages;
 
-import java.awt.AWTException;
-import java.awt.Rectangle;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.time.Duration;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.Set;
-
-import javax.annotation.Nullable;
-import javax.imageio.ImageIO;
-
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.touch.TouchActions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import bsh.Capabilities;
 import edw.edw.commonLib.Controls;
 import edw.edw.frameLib.Driver;
-import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
-import io.appium.java_client.touch.LongPressOptions;
-import javafx.scene.control.Alert.AlertType;
-import static io.appium.java_client.touch.LongPressOptions.longPressOptions;
-import static io.appium.java_client.touch.offset.ElementOption.element;
-
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileDriver;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.TouchAction;
 
 public class SelendroidTestApp extends Driver {
-	public AndroidDriver driver;
+	public AndroidDriver<WebElement> driver;
 	public WebDriver webdriver;
 	public WebDriverWait wait;
-	public MobileDriver driver1;
+	public MobileDriver<?> driver1;
 	Controls controls;
 
-	public SelendroidTestApp(AndroidDriver driver) {
+	public SelendroidTestApp(AndroidDriver<WebElement> driver) {
 		this.driver = driver;
 		wait = new WebDriverWait(driver, time);
 		controls = new Controls(driver);
 	}
-
-//	// Swiggy App
-//
-//	public void clickOnSetLocation() throws InterruptedException, IOException {
-//		driver.findElement(By.id("in.swiggy.android:id/set_location_text")).click();
-//		Thread.sleep(5000);
-//	}
-//
-//	public void clickOnChangeLocation() throws InterruptedException, IOException {
-//		driver.findElement(By.xpath("//android.widget.TextView[@text='CHANGE']")).click();
-//		Thread.sleep(1000);
-//	}
-//
-//	public void enterLocation() throws InterruptedException {
-//		List<WebElement> li = driver.findElements(By.id("in.swiggy.android:id/location_description"));
-//		li.get(0).click();
-//		Thread.sleep(1000);
-//		li.get(0).sendKeys("Aavin Milk Booth Chennai 600088");
-//		Thread.sleep(1000);
-//	}
-//
-//	public void clickOnLocation() throws InterruptedException, IOException {
-//		driver.findElement(By.xpath("//android.widget.LinearLayout[@bounds='[0,432][1080,623]']")).click();
-//		Thread.sleep(2000);
-//	}
-//
-//	public void clickOnConfirmLocation() throws InterruptedException, IOException {
-//		driver.findElement(By.id("in.swiggy.android:id/google_place_search_title_text1")).click();
-//		Thread.sleep(2000);
-//	}
-//
-//	public void clickOnSearch() throws InterruptedException, IOException {
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("in.swiggy.android:id/bottom_bar_explore_icon"))).click();
-//		Thread.sleep(2000);
-//	}
-//
-//	public void enterDominos() throws InterruptedException {
-//		List<WebElement> li = driver.findElements(By.id("in.swiggy.android:id/search_query"));
-//		li.get(0).click();
-//		Thread.sleep(1000);
-//		li.get(0).sendKeys("Dominos");
-//		Thread.sleep(2000);
-//	}
-//
-//	public void enterBurger() throws InterruptedException {
-//		List<WebElement> li = driver.findElements(By.id("in.swiggy.android:id/search_query"));
-//		li.get(0).click();
-//		Thread.sleep(1000);
-//		li.get(0).sendKeys("Burger");
-//		Thread.sleep(2000);
-//	}
-//
-//	public void clickOnBurgers() throws InterruptedException {
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text='Burgers']"))).click();
-//		Thread.sleep(2000);
-//	}
-//
-//	public void clickOnAdd() throws InterruptedException {
-//		// 1st Item
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text='ADD']"))).click();
-//		Thread.sleep(2000);
-//		// 2nd Item
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text='ADD']"))).click();
-//		Thread.sleep(2000);
-//	}
-//
-//	public void clickOnCart() throws InterruptedException, IOException {
-//		// 1st Item
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text='CART']"))).click();
-//		Thread.sleep(2000);
-//		File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//		FileUtils.copyFile(file, new File("K:\\EDW_Appium\\screenshots\\Cart.jpg"));
-//		Thread.sleep(2000);
-//	}
-//
-//	public void clickOnDelete1stItem() throws InterruptedException, IOException {
-//		driver.findElement(By.xpath("//*[@content-desc='decrement quantity']")).click();
-//		Thread.sleep(2000);
-//		File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//		FileUtils.copyFile(file, new File("K:\\EDW_Appium\\screenshots\\Deleted1stItem.jpg"));
-//		Thread.sleep(2000);
-//		
-//	}
-//
-//	public void clickOnDelete2ndItem() throws InterruptedException, IOException {
-//		driver.findElement(By.xpath("//*[@content-desc='decrement quantity']")).click();
-//		Thread.sleep(2000);
-//		File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//		FileUtils.copyFile(file, new File("K:\\EDW_Appium\\screenshots\\Deleted2ndItem.jpg"));
-//		Thread.sleep(2000);
-//	}
-//
-//	public void clickOnFoodItem() throws InterruptedException, IOException {
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text='Restaurant']"))).click();
-//	}
-//
-//	public void clickOnDominosImage() throws InterruptedException, IOException {
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("in.swiggy.android:id/image"))).click();
-//		Thread.sleep(3000);
-//	}
-//
-//	public void clickOnBack() throws InterruptedException {
-//		driver.pressKey(new KeyEvent().withKey(AndroidKey.BACK));
-//		Thread.sleep(1000);
-//	}
-//
-//	public void clickOnMenu() throws InterruptedException, IOException {
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("in.swiggy.android:id/menu_fab"))).click();
-//		Thread.sleep(1000);
-//		File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//		FileUtils.copyFile(file, new File("K:\\EDW_Appium\\screenshots\\Pizza.jpg"));
-//		Thread.sleep(2000);
-//	}
-//
-//	public void clickOnVeg() throws InterruptedException {
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text='Veg Pizza']"))).click();
-//		Thread.sleep(2000);
-//	}
-//
-//	/*public void clickOnPizza() throws InterruptedException, IOException {
-//		String s = new String("ADD");
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.view.ViewGroup[@index=4]")));
-//		List<WebElement> li = driver.findElements(By.xpath("//android.view.ViewGroup[@index=4]"));
-//		li.get(0).getSize();
-//		li.get(0).getCssValue(s);
-//		System.out.println(li.get(0).getText());
-//		Thread.sleep(1000);
-//		File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//		FileUtils.copyFile(file, new File("K:\\EDW_Appium\\screenshots\\Pizza.jpg"));
-//		Thread.sleep(2000);
-//	}*/
-//
-//	public void clickOnPizza0() throws InterruptedException, IOException {
-//		driver.findElement(By.xpath("//android.widget.TextView[normalize-space(@text)='Veg Pizza']/android.view.ViewGroup[@index=4]")).click();
-//		Thread.sleep(1000);
-//	}
-//
-//	public void clickOnDishes() throws InterruptedException {
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text='Dishes']"))).click();
-//		Thread.sleep(1000);
-//	}
-//
-//	public void clickOnPizza1() throws InterruptedException, IOException {
-//		Thread.sleep(4000);
-//		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView"
-//				+ "(new UiSelector().textContains(\"Veg Zinger Burger\").instance(0))");
-//		Thread.sleep(2000);
-//		File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//		FileUtils.copyFile(file, new File("K:\\EDW_Appium\\screenshots\\Pizza123.jpg"));
-//		Thread.sleep(2000);
-//	}
-//
-//	public void clickOnAdd1() throws InterruptedException {
-//		driver.findElement(By.xpath("//android.widget.RelativeLayout[@bounds='[744,1559][996,1648]']")).click();
-//		Thread.sleep(1000);
-//	}
-//
-//	public void clickOnFreshPanPizza() throws InterruptedException {
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text='Fresh Pan Pizza']"))).click();
-//		Thread.sleep(1000);
-//	}
-//
-//	public void clickOnContinue() throws InterruptedException {
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text='CONTINUE']"))).click();
-//		Thread.sleep(1000);
-//	}
-//
-//	public void clickOnAddItem() throws InterruptedException, IOException {
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text='ADD ITEM']"))).click();
-//		Thread.sleep(2000);
-//		File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//		FileUtils.copyFile(file, new File("K:\\EDW_Appium\\screenshots\\OrderedPizza.jpg"));
-//		Thread.sleep(2000);
-//	}
 
 	// Zoho App
 	public void clickOnSignUp() throws InterruptedException, IOException {
@@ -246,11 +40,17 @@ public class SelendroidTestApp extends Driver {
 
 	public void clickOnGoogle() throws InterruptedException, IOException {
 		driver.findElement(By.xpath("//*[@content-desc='Google']")).click();
+		// driver.findElement(By.xpath("//android.view.View[@text='Google']")).click();
 		Thread.sleep(1000);
 	}
 
 	public void clickOnMail() throws InterruptedException, IOException {
 		driver.findElement(By.xpath("//*[@content-desc='Jaffar Ali jaff.1.2.3.4.ali@gmail.com']")).click();
+		Thread.sleep(1000);
+	}
+	
+	public void clickOnContinue() throws InterruptedException, IOException {
+		driver.findElement(By.xpath("//*[@content-desc='Continue']")).click();
 		Thread.sleep(1000);
 	}
 
@@ -283,7 +83,7 @@ public class SelendroidTestApp extends Driver {
 	// Create Leads
 
 	public void clickOnMenu() throws InterruptedException, IOException {
-		driver.findElement(By.xpath("//android.widget.ImageButton[@index=0]")).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.ImageButton[@index=0]"))).click();
 		Thread.sleep(1000);
 	}
 
@@ -309,18 +109,22 @@ public class SelendroidTestApp extends Driver {
 	}
 
 	public void enterCompany() throws InterruptedException {
-		List<WebElement> li = driver.findElements(By.xpath("//android.widget.EditText[@bounds='[399,788][1038,925]']"));
-		li.get(0).click();
+		// List<WebElement> li = driver.findElements(By.xpath("//android.widget.EditText[@bounds='[399,788][1038,925]']"));
+		WebElement li = driver.findElement(By.xpath("//*[@class='android.widget.EditText'][1]"));
+		li.click();
 		Thread.sleep(1000);
-		li.get(0).sendKeys("TCS");
+		li.sendKeys("TCS");
+		Thread.sleep(2000);
+		driver.pressKey(new KeyEvent().withKey(AndroidKey.BACK));
 		Thread.sleep(1000);
 	}
 
 	public void enterFirstName() throws InterruptedException {
-		List<WebElement> li = driver.findElements(By.xpath("//android.widget.EditText[@bounds='[399,926][1038,1063]']"));
-		li.get(0).click();
+		WebElement li = driver.findElement(By.xpath("//android.widget.EditText[@bounds='[399,926][1038,1063]']"));
+		// WebElement li = driver.findElement(By.xpath("//*[@class='android.widget.EditText'][2]"));
+		li.click();
 		Thread.sleep(1000);
-		li.get(0).sendKeys("Alex");
+		li.sendKeys("Alex");
 		Thread.sleep(1000);
 	}
 
@@ -330,10 +134,11 @@ public class SelendroidTestApp extends Driver {
 	}
 
 	public void enterLastName() throws InterruptedException {
-		List<WebElement> li = driver.findElements(By.xpath("//android.widget.EditText[@bounds='[399,1064][1038,1201]']"));
-		li.get(0).click();
+		WebElement li = driver.findElement(By.xpath("//android.widget.EditText[@bounds='[399,1064][1038,1201]']"));
+		// WebElement li = driver.findElement(By.xpath("//*[@class='android.widget.EditText'][3]"));
+		li.click();
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//android.widget.EditText[@bounds='[399,916][1038,1053]']")).sendKeys("N");
+		li.sendKeys("N");
 		Thread.sleep(1000);
 	}
 
@@ -343,10 +148,11 @@ public class SelendroidTestApp extends Driver {
 	}
 
 	public void enterEmail() throws InterruptedException {
-		List<WebElement> li = driver.findElements(By.xpath("//android.widget.EditText[@bounds='[399,1202][1038,1339]']"));
-		li.get(0).click();
+		WebElement li = driver.findElement(By.xpath("//android.widget.EditText[@bounds='[399,1202][1038,1339]']"));
+		// WebElement li = driver.findElement(By.xpath("//*[@class='android.widget.EditText'][4]"));
+		li.click();
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//android.widget.EditText[@bounds='[399,1032][1038,1169]']")).sendKeys("alex12@gmail.com");
+		li.sendKeys("alex12@gmail.com");
 		Thread.sleep(1000);
 	}
 
@@ -356,10 +162,11 @@ public class SelendroidTestApp extends Driver {
 	}
 
 	public void enterPhoneNo() throws InterruptedException {
-		List<WebElement> li = driver.findElements(By.xpath("//android.widget.EditText[@bounds='[399,1340][1038,1477]']"));
-		li.get(0).click();
+		WebElement li = driver.findElement(By.xpath("//android.widget.EditText[@bounds='[399,1340][1038,1477]']"));
+		// WebElement li = driver.findElement(By.xpath("//*[@class='android.widget.EditText'][5]"));
+		li.click();
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//android.widget.EditText[@bounds='[399,1032][1038,1169]']")).sendKeys("9677234561");
+		li.sendKeys("9677234561");
 		Thread.sleep(1000);
 	}
 
@@ -391,18 +198,19 @@ public class SelendroidTestApp extends Driver {
 	}
 
 	public void enterCompany1() throws InterruptedException {
-		List<WebElement> li = driver.findElements(By.xpath("//android.widget.EditText[@bounds='[399,788][1038,925]']"));
-		li.get(0).click();
+		WebElement li = driver.findElement(By.xpath("//*[@class='android.widget.EditText'][1]"));
+		li.click();
 		Thread.sleep(1000);
-		li.get(0).sendKeys("CTS");
+		li.sendKeys("CTS");
 		Thread.sleep(1000);
 	}
 
 	public void enterFirstName1() throws InterruptedException {
-		List<WebElement> li = driver.findElements(By.xpath("//android.widget.EditText[@bounds='[399,926][1038,1063]']"));
-		li.get(0).click();
+		WebElement li = driver.findElement(By.xpath("//android.widget.EditText[@bounds='[399,926][1038,1063]']"));
+		//WebElement li = driver.findElement(By.xpath("//*[@class='android.widget.EditText'][2]"));
+		li.click();
 		Thread.sleep(1000);
-		li.get(0).sendKeys("Nakul");
+		li.sendKeys("Nakul");
 		Thread.sleep(1000);
 	}
 
@@ -412,10 +220,11 @@ public class SelendroidTestApp extends Driver {
 	}
 
 	public void enterLastName1() throws InterruptedException {
-		List<WebElement> li = driver.findElements(By.xpath("//android.widget.EditText[@bounds='[399,1064][1038,1201]']"));
-		li.get(0).click();
+		WebElement li = driver.findElement(By.xpath("//android.widget.EditText[@bounds='[399,1064][1038,1201]']"));
+		// WebElement li = driver.findElement(By.xpath("//*[@class='android.widget.EditText'][3]"));
+		li.click();
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//android.widget.EditText[@bounds='[399,916][1038,1053]']")).sendKeys("C");
+		li.sendKeys("C");
 		Thread.sleep(1000);
 	}
 
@@ -425,10 +234,11 @@ public class SelendroidTestApp extends Driver {
 	}
 
 	public void enterEmail1() throws InterruptedException {
-		List<WebElement> li = driver.findElements(By.xpath("//android.widget.EditText[@bounds='[399,1202][1038,1339]']"));
-		li.get(0).click();
+		WebElement li = driver.findElement(By.xpath("//android.widget.EditText[@bounds='[399,1202][1038,1339]']"));
+		// WebElement li = driver.findElement(By.xpath("//*[@class='android.widget.EditText'][4]"));
+		li.click();
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//android.widget.EditText[@bounds='[399,1032][1038,1169]']")).sendKeys("nakul70@gmail.com");
+		li.sendKeys("nakul70@gmail.com");
 		Thread.sleep(1000);
 	}
 
@@ -438,10 +248,11 @@ public class SelendroidTestApp extends Driver {
 	}
 
 	public void enterPhoneNo1() throws InterruptedException {
-		List<WebElement> li = driver.findElements(By.xpath("//android.widget.EditText[@bounds='[399,1340][1038,1477]']"));
-		li.get(0).click();
+		WebElement li = driver.findElement(By.xpath("//android.widget.EditText[@bounds='[399,1340][1038,1477]']"));
+		// WebElement li = driver.findElement(By.xpath("//*[@class='android.widget.EditText'][5]"));
+		li.click();
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//android.widget.EditText[@bounds='[399,1032][1038,1169]']")).sendKeys("9677451280");
+		li.sendKeys("9677451280");
 		Thread.sleep(1000);
 	}
 
@@ -474,10 +285,12 @@ public class SelendroidTestApp extends Driver {
 	}
 
 	public void enterTitle() throws InterruptedException {
-		List<WebElement> li= driver.findElements(By.xpath("//android.widget.EditText[@bounds='[399,336][1038,473]']"));
+		List<WebElement> li= driver.findElements(By.xpath("//*[@class='android.widget.EditText'][1]"));
 		li.get(0).click();
 		Thread.sleep(1000);
 		li.get(0).sendKeys("Meeting with CEO");
+		Thread.sleep(1000);
+		driver.pressKey(new KeyEvent().withKey(AndroidKey.BACK));
 		Thread.sleep(1000);
 	}
 
@@ -487,16 +300,20 @@ public class SelendroidTestApp extends Driver {
 		Thread.sleep(1000);
 		li.get(0).sendKeys("Chennai");
 		Thread.sleep(1000);
+		driver.pressKey(new KeyEvent().withKey(AndroidKey.BACK));
+		Thread.sleep(1000);
 	}
 
 	// From :
 	public void clickOnFromDate() throws InterruptedException {
-		driver.findElement(By.xpath("//android.widget.TextView[@bounds='[399,739][1038,865]']")).click();
+		WebElement li = driver.findElement(By.xpath("//android.widget.TextView[@bounds='[399,739][1038,865]']"));
+		// driver.findElement(By.xpath("//*[@class='android.widget.TextView'][1]")).click();
+		li.click();
 		Thread.sleep(1000);
 	}
 
 	public void clickOnFromDate1() throws InterruptedException {
-		driver.findElement(By.xpath("//*[@content-desc='28 August 2020']")).click();
+		driver.findElement(By.xpath("//android.view.View[@text='24']")).click();
 		Thread.sleep(1000);
 	}
 
@@ -521,7 +338,9 @@ public class SelendroidTestApp extends Driver {
 
 	// To :
 	public void clickOnToDate() throws InterruptedException {
-		driver.findElement(By.xpath("//android.widget.TextView[@bounds='[399,866][1038,992]']")).click();
+		List<WebElement> li = driver.findElements(By.xpath("//android.widget.TextView[@bounds='[399,866][1038,992]']"));
+		// driver.findElement(By.xpath("//*[@class='android.widget.TextView'][1]")).click();
+		li.get(0).click();
 		Thread.sleep(1000);
 	}
 
@@ -545,13 +364,15 @@ public class SelendroidTestApp extends Driver {
 	}
 
 	public void clickOnParticipants() throws InterruptedException {
-		driver.findElement(By.xpath("//android.widget.TextView[@bounds='[399,1120][1038,1246]']")).click();
+		WebElement li = driver.findElement(By.xpath("//android.widget.TextView[@bounds='[399,1120][1038,1246]']"));
+		// driver.findElement(By.xpath("//*[@class='android.widget.TextView'][3]")).click();
+		li.click();
 		Thread.sleep(1000);
 	}
 
 	// Selecting 1st Lead for Meeting
 	public void enterName() throws InterruptedException {
-		List<WebElement> li = driver.findElements(By.id("com.zoho.crm:id/participantsEditText"));
+		driver.findElements(By.id("com.zoho.crm:id/participantsEditText"));
 		driver.findElement(By.id("com.zoho.crm:id/addParticipants")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Leads']")).click();
@@ -564,7 +385,7 @@ public class SelendroidTestApp extends Driver {
 
 	// Selecting 2nd Lead for Meeting
 	public void enterName1() throws InterruptedException {
-		List<WebElement> li = driver.findElements(By.id("com.zoho.crm:id/participantsEditText"));
+		driver.findElements(By.id("com.zoho.crm:id/participantsEditText"));
 		driver.findElement(By.id("com.zoho.crm:id/addParticipants")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Leads']")).click();
@@ -587,10 +408,10 @@ public class SelendroidTestApp extends Driver {
 	}
 
 	public void clickOnDate() throws InterruptedException, IOException {
-		driver.findElement(By.xpath("//android.widget.TextView[@text='28']")).click();
+		driver.findElement(By.xpath("//android.widget.TextView[@text='24']")).click();
 		Thread.sleep(2000);
 		File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(file, new File("K:\\EDW_Appium\\screenshots\\FixedMeetings.jpg"));
+		FileUtils.copyFile(file, new File("K:\\Appium_EDW\\screenshots\\FixedMeetings.jpg"));
 		Thread.sleep(2000);
 	}
 
@@ -603,7 +424,7 @@ public class SelendroidTestApp extends Driver {
 		driver.findElement(By.xpath("//android.widget.TextView[@text='DETAILS']")).click();
 		Thread.sleep(2000);
 		File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(file, new File("K:\\EDW_Appium\\screenshots\\MeetingInformation.jpg"));
+		FileUtils.copyFile(file, new File("K:\\Appium_EDW\\screenshots\\MeetingInformation.jpg"));
 		Thread.sleep(2000);
 	}
 
